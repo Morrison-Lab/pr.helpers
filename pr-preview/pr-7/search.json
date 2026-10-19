@@ -4,7 +4,7 @@
     "href": "NEWS.html",
     "title": "pr.helpers (development version)",
     "section": "",
-    "text": "pr.helpers (development version)\n\nThe docs workflow installs the R package from quarto-dev/quarto-r, because quarto-dev/quarto has no R package and failed dependency resolution (gha#1137).\nAdded pr_init(), pr_resume(), pr_fetch(), pr_push(), pr_pull(), pr_merge_main(), pr_view(), pr_pause(), pr_finish(), and pr_forget() helpers for pull/merge request workflows inspired by {usethis} and extended for GitLab support.\nAdded pr_request_url() to generate GitHub pull request and GitLab merge request URLs from git remotes.\nSwitched from pkgdown to altdoc for documentation generation. Now using Quarto Website for documentation with native math equation support via MathJax.\nRemoved pkgdown-specific configurations and workflows.\nRetained RevealJS multi-format support for Quarto vignettes and articles.\nFixed index page rendering by switching from index.md to index.qmd to properly process Quarto include directive (#58)\nSwitched from pkgdown to altdoc (#45)\nUpdated lintr configuration to match serodynamics reference with enhanced linter rules\nPR preview comments now use recreate: true to ensure they always appear at the bottom of the PR conversation, preventing them from being hidden in collapsed sections (#31)\nAdded RevealJS presentation format for Quarto vignettes and articles in pkgdown documentation. HTML pages now display an “Other Formats” section with links to slide versions (#29)\n\n\n\npr.helpers 0.0.0.9000\n\nInitial development version",
+    "text": "pr.helpers (development version)\n\nThe docs workflow installs the R package from quarto-dev/quarto-r, because quarto-dev/quarto has no R package and failed dependency resolution (gha#1137).\nThe documentation check no longer fails when a newer roxygen2 only rewrites the Config/roxygen2/version or RoxygenNote field in DESCRIPTION. It still fails on any other change to DESCRIPTION, NAMESPACE, or man/.\nAdded pr_init(), pr_resume(), pr_fetch(), pr_push(), pr_pull(), pr_merge_main(), pr_view(), pr_pause(), pr_finish(), and pr_forget() helpers for pull/merge request workflows inspired by {usethis} and extended for GitLab support.\nAdded pr_request_url() to generate GitHub pull request and GitLab merge request URLs from git remotes.\nSwitched from pkgdown to altdoc for documentation generation. Now using Quarto Website for documentation with native math equation support via MathJax.\nRemoved pkgdown-specific configurations and workflows.\nRetained RevealJS multi-format support for Quarto vignettes and articles.\nFixed index page rendering by switching from index.md to index.qmd to properly process Quarto include directive (#58)\nSwitched from pkgdown to altdoc (#45)\nUpdated lintr configuration to match serodynamics reference with enhanced linter rules\nPR preview comments now use recreate: true to ensure they always appear at the bottom of the PR conversation, preventing them from being hidden in collapsed sections (#31)\nAdded RevealJS presentation format for Quarto vignettes and articles in pkgdown documentation. HTML pages now display an “Other Formats” section with links to slide versions (#29)\n\n\n\npr.helpers 0.0.0.9000\n\nInitial development version",
     "crumbs": [
       "Documentation",
       "News"
@@ -59,7 +59,7 @@
     "href": "CITATION.html",
     "title": "Citation",
     "section": "",
-    "text": "Citation\nTo cite package ‘pr.helpers’ in publications use:\n\nMorrison D (2026). pr.helpers: Helpers for Pull and Merge Request Git Workflows. R package version 0.0.0.9013, https://github.com/d-morrison/pr.helpers.",
+    "text": "Citation\nTo cite package ‘pr.helpers’ in publications use:\n\nMorrison D (2026). pr.helpers: Helpers for Pull and Merge Request Git Workflows. R package version 0.0.0.9014, https://github.com/d-morrison/pr.helpers.",
     "crumbs": [
       "Documentation",
       "Citation"
@@ -163,7 +163,7 @@
     "href": "man/pr.helpers-package.html",
     "title": "pr.helpers",
     "section": "",
-    "text": "Provides helper functions for common pull request and merge request workflows from a local Git repository. Includes utilities for creating and switching branches, fetching requests by number, generating request URLs, and syncing with the default branch across GitHub and GitLab remotes.\n\n\n\nMaintainer: David Morrison 2474437+d-morrison@users.noreply.github.com\n\n\n\nUseful links:\n\n\nhttps://github.com/d-morrison/pr.helpers\n\n\nReport bugs at https://github.com/d-morrison/pr.helpers/issues",
+    "text": "Provides helper functions for common pull request and merge request workflows from a local Git repository. Includes utilities for creating and switching branches, fetching requests by number, generating request URLs, and syncing with the default branch across GitHub and GitLab remotes.\n\n\n\nMaintainer: David Morrison 2474437+d-morrison@users.noreply.github.com\nAuthors:\n\n\nDavid Morrison 2474437+d-morrison@users.noreply.github.com\n\n\n\n\n\nUseful links:\n\n\nhttps://github.com/d-morrison/pr.helpers\n\n\nReport bugs at https://github.com/d-morrison/pr.helpers/issues",
     "crumbs": [
       "Documentation",
       "Reference",
@@ -175,7 +175,7 @@
     "href": "man/pr.helpers-package.html#pr.helpers-helpers-for-pull-and-merge-request-git-workflows",
     "title": "pr.helpers",
     "section": "",
-    "text": "Provides helper functions for common pull request and merge request workflows from a local Git repository. Includes utilities for creating and switching branches, fetching requests by number, generating request URLs, and syncing with the default branch across GitHub and GitLab remotes.\n\n\n\nMaintainer: David Morrison 2474437+d-morrison@users.noreply.github.com\n\n\n\nUseful links:\n\n\nhttps://github.com/d-morrison/pr.helpers\n\n\nReport bugs at https://github.com/d-morrison/pr.helpers/issues",
+    "text": "Provides helper functions for common pull request and merge request workflows from a local Git repository. Includes utilities for creating and switching branches, fetching requests by number, generating request URLs, and syncing with the default branch across GitHub and GitLab remotes.\n\n\n\nMaintainer: David Morrison 2474437+d-morrison@users.noreply.github.com\nAuthors:\n\n\nDavid Morrison 2474437+d-morrison@users.noreply.github.com\n\n\n\n\n\nUseful links:\n\n\nhttps://github.com/d-morrison/pr.helpers\n\n\nReport bugs at https://github.com/d-morrison/pr.helpers/issues",
     "crumbs": [
       "Documentation",
       "Reference",

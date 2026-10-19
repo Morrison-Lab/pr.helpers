@@ -452,6 +452,7 @@ ul.task-list li input[type="checkbox"] {
 <h1>pr.helpers (development version)</h1>
 <ul>
 <li><p>The docs workflow installs the R package from <code>quarto-dev/quarto-r</code>, because <code>quarto-dev/quarto</code> has no R package and failed dependency resolution (gha<a href="https://github.com/d-morrison/pr.helpers/issues/1137">#1137</a>).</p></li>
+<li><p>The documentation check no longer fails when a newer <code>roxygen2</code> only rewrites the <code>Config/roxygen2/version</code> or <code>RoxygenNote</code> field in <code>DESCRIPTION</code>. It still fails on any other change to <code>DESCRIPTION</code>, <code>NAMESPACE</code>, or <code>man/</code>.</p></li>
 <li><p>Added <code>pr_init()</code>, <code>pr_resume()</code>, <code>pr_fetch()</code>, <code>pr_push()</code>, <code>pr_pull()</code>, <code>pr_merge_main()</code>, <code>pr_view()</code>, <code>pr_pause()</code>, <code>pr_finish()</code>, and <code>pr_forget()</code> helpers for pull/merge request workflows inspired by <code>{usethis}</code> and extended for GitLab support.</p></li>
 <li><p>Added <code>pr_request_url()</code> to generate GitHub pull request and GitLab merge request URLs from git remotes.</p></li>
 <li><p>Switched from pkgdown to altdoc for documentation generation. Now using Quarto Website for documentation with native math equation support via MathJax.</p></li>
