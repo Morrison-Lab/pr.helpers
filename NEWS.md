@@ -1,5 +1,9 @@
 # pr.helpers (development version)
 
+* The docs workflow installs the R package from `quarto-dev/quarto-r`,
+  because `quarto-dev/quarto` has no R package and failed dependency
+  resolution (gha#1137).
+
 * Added `pr_init()`, `pr_resume()`, `pr_fetch()`, `pr_push()`, `pr_pull()`,
   `pr_merge_main()`, `pr_view()`, `pr_pause()`, `pr_finish()`, and
   `pr_forget()` helpers for pull/merge request workflows inspired by
