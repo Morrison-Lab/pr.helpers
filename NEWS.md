@@ -4,6 +4,10 @@
   because `quarto-dev/quarto` has no R package and failed dependency
   resolution (gha#1137).
 
+* The documentation check no longer fails when a newer `roxygen2` only rewrites
+  the `Config/roxygen2/version` or `RoxygenNote` field in `DESCRIPTION`.
+  It still fails on any other change to `DESCRIPTION`, `NAMESPACE`, or `man/`.
+
 * Added `pr_init()`, `pr_resume()`, `pr_fetch()`, `pr_push()`, `pr_pull()`,
   `pr_merge_main()`, `pr_view()`, `pr_pause()`, `pr_finish()`, and
   `pr_forget()` helpers for pull/merge request workflows inspired by
